@@ -1,4 +1,4 @@
-# Modern POS - Hibernate
+# Modern POS - JPA
 
 Podi ungea asawata hadapu ekak hodea.
 
