@@ -15,8 +15,8 @@ public class CustomerDAOImpl extends CrudDAOImpl<Customer,String> implements Cus
 
     @Override
     public int count() throws Exception {
-        return session.createNativeQuery("SELECT COUNT(*) FROM Customer", Integer.class)
-                .uniqueResult();
+        return (int) em.createNativeQuery("SELECT COUNT(*) FROM Customer")
+                .getSingleResult();
     }
 
 }
